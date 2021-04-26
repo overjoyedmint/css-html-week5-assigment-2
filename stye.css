@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+
+  background-clip: border-box;
+
+  background-color: salmon;
+  background-image: url(./images/bg-intro-desktop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.form_container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  overflow: hidden;
+  padding: 3.5%;
+  height: 75%;
+  width: 80%;
+  border-radius: 2%;
+  box-shadow: rgb(190, 106, 120) 0px 8px;
+}
+.forms {
+  height: 100%;
+}
+
+.forms > * {
+  height: 20%;
+  border-radius: 4%;
+  border-color: rgb(238, 218, 218);
+  margin: 1%;
+  margin-top: 4%;
+  border-style: solid;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  padding: 5%;
+}
+
+.left {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 50%;
+  color: white;
+  padding: 3.5%;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+.trial_button {
+  background-color: hsl(248, 32%, 49%);
+  width: 80%;
+  height: 10%;
+  border-radius: 8px;
+  margin-bottom: 3%;
+  font-size: 90%;
+  color: rgb(234, 219, 235);
+  box-shadow: rgb(206, 94, 112) 0px 8px;
+}
+
+.trial_bold {
+  font-weight: bolder;
+  color: white;
+}
+.submit {
+  background-color: hsl(154, 59%, 51%);
+  font-size: 100%;
+  color: white;
+}
+
+.footer {
+  font-size: 75%;
+  margin: 1%;
+  color: rgb(209, 209, 209);
+  font-weight: bold;
+  position: relative;
+  text-align: center;
+}
+
+.red_footer {
+  color: hsl(0, 100%, 74%);
+}
+
+h1 {
+  color: white;
+  font-size: 490%;
+  line-height: 100%;
+  margin-bottom: 3%;
+}
+p {
+  font-size: 120%;
+  line-height: 170%;
+}
+
+::-webkit-input-placeholder {
+  font-weight: bold;
+  color: rgb(148, 132, 132);
+}
+
+input {
+  padding-left: 20px;
+}
+
+@media only screen and (max-width: 614px) {
+  * {
+    margin: 0px;
+    padding: 0px;
+  }
+  .main {
+    flex-direction: column;
+    height: 100vh;
+
+    align-items: center;
+  }
+
+  .left {
+    width: 100vw;
+    padding: 8%;
+    height: 30%;
+    text-align: center;
+  }
+  .right {
+    width: 100vw;
+    height: 90%;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  p {
+    font-size: 105%;
+  }
+  .trial_button {
+    height: 15%;
+    font-size: 110%;
+  }
+}
